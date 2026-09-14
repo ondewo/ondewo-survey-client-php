@@ -7,6 +7,7 @@ namespace Ondewo\Survey\Tests\Generated;
 use Ondewo\Survey\Answer;
 use Ondewo\Survey\Answer\UserInfo;
 use Ondewo\Survey\ListSurveysRequest;
+use Ondewo\Survey\ScaleQuestion\ScaleValue;
 use Ondewo\Survey\SubFlow;
 use Ondewo\Survey\Survey;
 use Ondewo\Survey\Survey\AgentStatus;
@@ -134,6 +135,48 @@ final class MessageSerializationTest extends TestCase
         $parsedRequest->mergeFromJsonString($request->serializeToJsonString());
 
         self::assertSame('page-2', $parsedRequest->getPageToken());
+    }
+
+    public function testAnIntegerFieldSurvivesAJsonRoundTrip(): void
+    {
+        // Its own case because google/protobuf's PURE-PHP JSON parser range-checks every integer
+        // with bccomp(): without ext-bcmath this dies with "Call to undefined function
+        // Google\Protobuf\Internal\bccomp()" on the first int field it meets. The extension is a
+        // `suggest` of google/protobuf, not a `require`, so nothing else would surface that.
+        // ondewo-survey-api declares its two integer kinds in two different messages, and both
+        // are covered here: JSON spells an int64 as a string and an int32 as a number, which are
+        // different branches of the parser - and of the range check.
+        $answer = new Answer();
+        $answer->setQuestionNr(1700000000123);
+        $answer->setSessionId('session-1');
+        $answer->setAnswerText('very satisfied');
+
+        $answerJson = $answer->serializeToJsonString();
+
+        // The integers have to REACH the JSON or the parser never range-checks them, and the case
+        // would be green with or without the extension: a proto3 scalar at its zero value is
+        // omitted from the JSON entirely.
+        self::assertStringContainsString('"questionNr":"1700000000123"', $answerJson);
+
+        $parsedAnswer = new Answer();
+        $parsedAnswer->mergeFromJsonString($answerJson);
+
+        self::assertSame(1700000000123, $parsedAnswer->getQuestionNr());
+        self::assertSame('session-1', $parsedAnswer->getSessionId());
+        self::assertSame('very satisfied', $parsedAnswer->getAnswerText());
+
+        $scaleValue = new ScaleValue();
+        $scaleValue->setValue(5);
+        $scaleValue->setLabel('very satisfied');
+
+        $scaleJson = $scaleValue->serializeToJsonString();
+        self::assertStringContainsString('"value":5', $scaleJson);
+
+        $parsedScaleValue = new ScaleValue();
+        $parsedScaleValue->mergeFromJsonString($scaleJson);
+
+        self::assertSame(5, $parsedScaleValue->getValue());
+        self::assertSame('very satisfied', $parsedScaleValue->getLabel());
     }
 
     public function testTheEnumZeroValueIsTheDefaultOfAFieldTypedByIt(): void
