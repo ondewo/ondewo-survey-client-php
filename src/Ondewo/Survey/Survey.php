@@ -10,13 +10,15 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * A survey containing questions and metadata for conducting user surveys
+ *
  * Generated from protobuf message <code>ondewo.survey.Survey</code>
  */
 class Survey extends \Google\Protobuf\Internal\Message
 {
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      * Read-only in the Survey message (assigned by the back-end)
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
@@ -31,6 +33,7 @@ class Survey extends \Google\Protobuf\Internal\Message
     /**
      * Required. The language of the agent created for the survey.
      * This is also the only supported language of the agent.
+     * ISO 639-1 language code
      *
      * Generated from protobuf field <code>string language_code = 3;</code>
      */
@@ -68,13 +71,14 @@ class Survey extends \Google\Protobuf\Internal\Message
      *
      *     @type string $survey_id
      *           The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     *           Format: `projects/<Project ID>/agent`.
+     *           Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *           Read-only in the Survey message (assigned by the back-end)
      *     @type string $display_name
      *           Required. The (human readable) name of this survey
      *     @type string $language_code
      *           Required. The language of the agent created for the survey.
      *           This is also the only supported language of the agent.
+     *           ISO 639-1 language code
      *     @type \Ondewo\Survey\Question[] $questions
      *           Required. List of questions to be asked during the survey.
      *     @type \Ondewo\Survey\SurveyInfo $survey_info
@@ -92,7 +96,7 @@ class Survey extends \Google\Protobuf\Internal\Message
 
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      * Read-only in the Survey message (assigned by the back-end)
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
@@ -105,7 +109,7 @@ class Survey extends \Google\Protobuf\Internal\Message
 
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      * Read-only in the Survey message (assigned by the back-end)
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
@@ -149,6 +153,7 @@ class Survey extends \Google\Protobuf\Internal\Message
     /**
      * Required. The language of the agent created for the survey.
      * This is also the only supported language of the agent.
+     * ISO 639-1 language code
      *
      * Generated from protobuf field <code>string language_code = 3;</code>
      * @return string
@@ -161,6 +166,7 @@ class Survey extends \Google\Protobuf\Internal\Message
     /**
      * Required. The language of the agent created for the survey.
      * This is also the only supported language of the agent.
+     * ISO 639-1 language code
      *
      * Generated from protobuf field <code>string language_code = 3;</code>
      * @param string $var

@@ -13,18 +13,26 @@ use UnexpectedValueException;
 class AgentStatus
 {
     /**
+     * Agent has not been initialized yet
+     *
      * Generated from protobuf enum <code>TO_BE_INITIALIZED = 0;</code>
      */
     const TO_BE_INITIALIZED = 0;
     /**
+     * Agent has been successfully updated and is current
+     *
      * Generated from protobuf enum <code>UPDATED = 1;</code>
      */
     const UPDATED = 1;
     /**
+     * Agent is currently being updated
+     *
      * Generated from protobuf enum <code>UPDATING = 2;</code>
      */
     const UPDATING = 2;
     /**
+     * Agent is outdated and needs to be updated
+     *
      * Generated from protobuf enum <code>OUTDATED = 3;</code>
      */
     const OUTDATED = 3;

@@ -10,8 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * SingleParameterQuestion defines a question which prompts the user for one entity of a particular type
- * Example: SingleParameterQuestion(question_text='How old are you?', parameter_type='sys.number')
+ * <p>SingleParameterQuestion defines a question which prompts the user for one entity of a particular type</p>
+ * <p>Example: <code>SingleParameterQuestion(question_text=&apos;How old are you?&apos;, parameter_type=&apos;sys.number&apos;)</code></p>
  *
  * Generated from protobuf message <code>ondewo.survey.SingleParameterQuestion</code>
  */

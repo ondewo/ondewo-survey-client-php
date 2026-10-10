@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Request message for updating an existing survey
+ *
  * Generated from protobuf message <code>ondewo.survey.UpdateSurveyRequest</code>
  */
 class UpdateSurveyRequest extends \Google\Protobuf\Internal\Message
@@ -22,8 +24,7 @@ class UpdateSurveyRequest extends \Google\Protobuf\Internal\Message
     protected $survey = null;
     /**
      * Optional. Field mask that defines which fields get updated. Default: all fields are updated.
-     * Example:
-     *          - update_mask = FieldMask( [ 'survey.display_name', 'survey.questions' ] )
+     * Example: <code>update_mask = FieldMask([&apos;survey.display_name&apos;, &apos;survey.questions&apos;])</code>
      *
      * Generated from protobuf field <code>.google.protobuf.FieldMask update_mask = 2;</code>
      */
@@ -39,8 +40,7 @@ class UpdateSurveyRequest extends \Google\Protobuf\Internal\Message
      *           Updated survey. Note: the ID must refer to an existing survey which will be updated
      *     @type \Google\Protobuf\FieldMask $update_mask
      *           Optional. Field mask that defines which fields get updated. Default: all fields are updated.
-     *           Example:
-     *                    - update_mask = FieldMask( [ 'survey.display_name', 'survey.questions' ] )
+     *           Example: <code>update_mask = FieldMask([&apos;survey.display_name&apos;, &apos;survey.questions&apos;])</code>
      * }
      */
     public function __construct($data = NULL) {
@@ -86,8 +86,7 @@ class UpdateSurveyRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Optional. Field mask that defines which fields get updated. Default: all fields are updated.
-     * Example:
-     *          - update_mask = FieldMask( [ 'survey.display_name', 'survey.questions' ] )
+     * Example: <code>update_mask = FieldMask([&apos;survey.display_name&apos;, &apos;survey.questions&apos;])</code>
      *
      * Generated from protobuf field <code>.google.protobuf.FieldMask update_mask = 2;</code>
      * @return \Google\Protobuf\FieldMask|null
@@ -109,8 +108,7 @@ class UpdateSurveyRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * Optional. Field mask that defines which fields get updated. Default: all fields are updated.
-     * Example:
-     *          - update_mask = FieldMask( [ 'survey.display_name', 'survey.questions' ] )
+     * Example: <code>update_mask = FieldMask([&apos;survey.display_name&apos;, &apos;survey.questions&apos;])</code>
      *
      * Generated from protobuf field <code>.google.protobuf.FieldMask update_mask = 2;</code>
      * @param \Google\Protobuf\FieldMask $var

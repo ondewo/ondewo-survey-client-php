@@ -23,10 +23,14 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
      */
     protected $question_text = '';
     /**
+     * Minimum value and label for the scale
+     *
      * Generated from protobuf field <code>.ondewo.survey.ScaleQuestion.ScaleValue min_value = 2;</code>
      */
     protected $min_value = null;
     /**
+     * Maximum value and label for the scale
+     *
      * Generated from protobuf field <code>.ondewo.survey.ScaleQuestion.ScaleValue max_value = 3;</code>
      */
     protected $max_value = null;
@@ -40,7 +44,9 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
      *     @type string $question_text
      *           The text which introduces the question (should be pronounceable)
      *     @type \Ondewo\Survey\ScaleQuestion\ScaleValue $min_value
+     *           Minimum value and label for the scale
      *     @type \Ondewo\Survey\ScaleQuestion\ScaleValue $max_value
+     *           Maximum value and label for the scale
      * }
      */
     public function __construct($data = NULL) {
@@ -75,6 +81,8 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Minimum value and label for the scale
+     *
      * Generated from protobuf field <code>.ondewo.survey.ScaleQuestion.ScaleValue min_value = 2;</code>
      * @return \Ondewo\Survey\ScaleQuestion\ScaleValue|null
      */
@@ -94,6 +102,8 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Minimum value and label for the scale
+     *
      * Generated from protobuf field <code>.ondewo.survey.ScaleQuestion.ScaleValue min_value = 2;</code>
      * @param \Ondewo\Survey\ScaleQuestion\ScaleValue $var
      * @return $this
@@ -107,6 +117,8 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Maximum value and label for the scale
+     *
      * Generated from protobuf field <code>.ondewo.survey.ScaleQuestion.ScaleValue max_value = 3;</code>
      * @return \Ondewo\Survey\ScaleQuestion\ScaleValue|null
      */
@@ -126,6 +138,8 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Maximum value and label for the scale
+     *
      * Generated from protobuf field <code>.ondewo.survey.ScaleQuestion.ScaleValue max_value = 3;</code>
      * @param \Ondewo\Survey\ScaleQuestion\ScaleValue $var
      * @return $this

@@ -10,13 +10,15 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Request message for deleting a survey
+ *
  * Generated from protobuf message <code>ondewo.survey.DeleteSurveyRequest</code>
  */
 class DeleteSurveyRequest extends \Google\Protobuf\Internal\Message
 {
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      */
@@ -30,7 +32,7 @@ class DeleteSurveyRequest extends \Google\Protobuf\Internal\Message
      *
      *     @type string $survey_id
      *           The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     *           Format: `projects/<Project ID>/agent`.
+     *           Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      * }
      */
     public function __construct($data = NULL) {
@@ -40,7 +42,7 @@ class DeleteSurveyRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      * @return string
@@ -52,7 +54,7 @@ class DeleteSurveyRequest extends \Google\Protobuf\Internal\Message
 
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      * @param string $var

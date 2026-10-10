@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * User information for non-anonymous surveys
+ *
  * Generated from protobuf message <code>ondewo.survey.Answer.UserInfo</code>
  */
 class UserInfo extends \Google\Protobuf\Internal\Message

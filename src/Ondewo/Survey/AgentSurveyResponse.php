@@ -10,13 +10,15 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Response message for agent-related survey operations
+ *
  * Generated from protobuf message <code>ondewo.survey.AgentSurveyResponse</code>
  */
 class AgentSurveyResponse extends \Google\Protobuf\Internal\Message
 {
     /**
      * The parent of an agent. Equal to the survey ID.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      */
@@ -30,7 +32,7 @@ class AgentSurveyResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type string $parent
      *           The parent of an agent. Equal to the survey ID.
-     *           Format: `projects/<Project ID>/agent`.
+     *           Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      * }
      */
     public function __construct($data = NULL) {
@@ -40,7 +42,7 @@ class AgentSurveyResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * The parent of an agent. Equal to the survey ID.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @return string
@@ -52,7 +54,7 @@ class AgentSurveyResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * The parent of an agent. Equal to the survey ID.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string parent = 1;</code>
      * @param string $var

@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * An answer to a survey question collected during a session
+ *
  * Generated from protobuf message <code>ondewo.survey.Answer</code>
  */
 class Answer extends \Google\Protobuf\Internal\Message
@@ -65,7 +67,9 @@ class Answer extends \Google\Protobuf\Internal\Message
      *     @type string $answer_parameter_original
      *           Optional; contains the original text of the selected option (parameter) extracted
      *     @type bool $anonymous
+     *           True if the survey is anonymous, false otherwise
      *     @type \Ondewo\Survey\Answer\UserInfo $user_information
+     *           User information if the survey is not anonymous
      * }
      */
     public function __construct($data = NULL) {
@@ -206,6 +210,8 @@ class Answer extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * True if the survey is anonymous, false otherwise
+     *
      * Generated from protobuf field <code>bool anonymous = 7;</code>
      * @return bool
      */
@@ -220,6 +226,8 @@ class Answer extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * True if the survey is anonymous, false otherwise
+     *
      * Generated from protobuf field <code>bool anonymous = 7;</code>
      * @param bool $var
      * @return $this
@@ -233,6 +241,8 @@ class Answer extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * User information if the survey is not anonymous
+     *
      * Generated from protobuf field <code>.ondewo.survey.Answer.UserInfo user_information = 6;</code>
      * @return \Ondewo\Survey\Answer\UserInfo|null
      */
@@ -247,6 +257,8 @@ class Answer extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * User information if the survey is not anonymous
+     *
      * Generated from protobuf field <code>.ondewo.survey.Answer.UserInfo user_information = 6;</code>
      * @param \Ondewo\Survey\Answer\UserInfo $var
      * @return $this

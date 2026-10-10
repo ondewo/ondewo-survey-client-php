@@ -4,17 +4,11 @@
 // Original file comments:
 // Copyright 2020 ONDEWO GmbH
 //
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 //
-//     http://www.apache.org/licenses/LICENSE-2.0
+//     <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
 //
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License. (editesyntax = "proto3";
+// Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. (editesyntax = "proto3";
 namespace Ondewo\Survey;
 
 /**
@@ -33,7 +27,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Create a Survey and an empty NLU Agent for it
+     * <p>Create a Survey and an empty NLU Agent for it</p>
      * @param \Ondewo\Survey\CreateSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -48,7 +42,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Retrieve a Survey message from the Database and return it
+     * <p>Retrieve a Survey message from the Database and return it</p>
      * @param \Ondewo\Survey\GetSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -63,7 +57,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Update an existing Survey message from the Database and return it
+     * <p>Update an existing Survey message from the Database and return it</p>
      * @param \Ondewo\Survey\UpdateSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -78,7 +72,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Delete a survey and its associated agent (if existent)
+     * <p>Delete a survey and its associated agent (if existent)</p>
      * @param \Ondewo\Survey\DeleteSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -93,7 +87,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Returns the list of all surveys in the server
+     * <p>Returns the list of all surveys in the server</p>
      * @param \Ondewo\Survey\ListSurveysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -108,7 +102,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Retrieve answers to survey questions collected in interactions with a survey agent for a specific session
+     * <p>Retrieve answers to survey questions collected in interactions with a survey agent for a specific session</p>
      * @param \Ondewo\Survey\GetSurveyAnswersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -123,7 +117,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Retrieve all answers to survey questions collected in interactions with a survey agent in any session
+     * <p>Retrieve all answers to survey questions collected in interactions with a survey agent in any session</p>
      * @param \Ondewo\Survey\GetAllSurveyAnswersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -138,7 +132,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Populate and configures an NLU Agent from a Survey
+     * <p>Populate and configures an NLU Agent from a Survey</p>
      * @param \Ondewo\Survey\AgentSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -153,7 +147,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Update an NLU agent from a survey
+     * <p>Update an NLU agent from a survey</p>
      * @param \Ondewo\Survey\AgentSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
@@ -168,7 +162,7 @@ class SurveysClient extends \Grpc\BaseStub {
     }
 
     /**
-     * Deletes all data of an NLU agent associated to a survey
+     * <p>Deletes all data of an NLU agent associated to a survey</p>
      * @param \Ondewo\Survey\AgentSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options

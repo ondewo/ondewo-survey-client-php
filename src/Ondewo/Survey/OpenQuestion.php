@@ -10,8 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * A question to which any kind of reply can be given and recorded
- * fixme: not working yet
+ * <p>A question to which any kind of reply can be given and recorded</p>
+ * <p>fixme: not working yet</p>
  *
  * Generated from protobuf message <code>ondewo.survey.OpenQuestion</code>
  */

@@ -10,8 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * The Choice message defines one "option" for the SingleChoiceQuestion and MultipleChoiceQuestion question types
- * Example: Choice(synonyms=["blue", "blueish", "pale blue", "deep blue"])
+ * <p>The Choice message defines one &quot;option&quot; for the SingleChoiceQuestion and MultipleChoiceQuestion question types</p>
+ * <p>Example: <code>Choice(synonyms=[&quot;blue&quot;, &quot;blueish&quot;, &quot;pale blue&quot;, &quot;deep blue&quot;])</code></p>
  *
  * Generated from protobuf message <code>ondewo.survey.Choice</code>
  */
@@ -31,7 +31,7 @@ class Choice extends \Google\Protobuf\Internal\Message
      */
     protected $follow_up_question = null;
     /**
-     * The "canonical value" (i.e. the entity value)
+     * The &quot;canonical value&quot; (i.e. the entity value)
      *
      * Generated from protobuf field <code>string value = 3;</code>
      */
@@ -49,7 +49,7 @@ class Choice extends \Google\Protobuf\Internal\Message
      *           Optional; Nested question if this specific choice gets chosen.
      *           Note: the follow-up question is only available for the SingleChoiceQuestion
      *     @type string $value
-     *           The "canonical value" (i.e. the entity value)
+     *           The &quot;canonical value&quot; (i.e. the entity value)
      * }
      */
     public function __construct($data = NULL) {
@@ -122,7 +122,7 @@ class Choice extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The "canonical value" (i.e. the entity value)
+     * The &quot;canonical value&quot; (i.e. the entity value)
      *
      * Generated from protobuf field <code>string value = 3;</code>
      * @return string
@@ -133,7 +133,7 @@ class Choice extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The "canonical value" (i.e. the entity value)
+     * The &quot;canonical value&quot; (i.e. the entity value)
      *
      * Generated from protobuf field <code>string value = 3;</code>
      * @param string $var
