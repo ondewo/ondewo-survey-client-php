@@ -10,8 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * MultipleParameterQuestion defines a question which prompts the user for one or several entities of one particular type
- * Example: MultipleParameterQuestion(question_text='How old are your children?', parameter_type='sys.number')
+ * <p>MultipleParameterQuestion defines a question which prompts the user for one or several entities of one particular type</p>
+ * <p>Example: <code>MultipleParameterQuestion(question_text=&apos;How old are your children?&apos;, parameter_type=&apos;sys.number&apos;)</code></p>
  *
  * Generated from protobuf message <code>ondewo.survey.MultipleParameterQuestion</code>
  */

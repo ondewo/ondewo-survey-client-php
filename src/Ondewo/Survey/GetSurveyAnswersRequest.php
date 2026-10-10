@@ -10,11 +10,16 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Request message for retrieving survey answers for a specific session or user
+ *
  * Generated from protobuf message <code>ondewo.survey.GetSurveyAnswersRequest</code>
  */
 class GetSurveyAnswersRequest extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The project identifier for this survey. Equal to the parent of the corresponding Agent.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
+     *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      */
     protected $survey_id = '';
@@ -27,6 +32,8 @@ class GetSurveyAnswersRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type string $survey_id
+     *           The project identifier for this survey. Equal to the parent of the corresponding Agent.
+     *           Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *     @type string $session_id
      *           ID of one specific session on which survey answers were collected (contains survey_id)
      *     @type string $user_id
@@ -41,6 +48,9 @@ class GetSurveyAnswersRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The project identifier for this survey. Equal to the parent of the corresponding Agent.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
+     *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      * @return string
      */
@@ -50,6 +60,9 @@ class GetSurveyAnswersRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The project identifier for this survey. Equal to the parent of the corresponding Agent.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
+     *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      * @param string $var
      * @return $this

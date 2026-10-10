@@ -10,22 +10,20 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * The response message for [Intents.ListIntents][google.cloud.dialogflow.v2.Intents.ListIntents].
+ * <p>The response message for <a href="index.html#google.cloud.dialogflow.v2.Intents.ListIntents">Intents.ListIntents</a>.</p>
  *
  * Generated from protobuf message <code>ondewo.survey.ListSurveysResponse</code>
  */
 class ListSurveysResponse extends \Google\Protobuf\Internal\Message
 {
     /**
-     * The list of surveys. There will be a maximum number of items
-     * returned based on the page_token field in the request.
+     * The list of surveys. There will be a maximum number of items returned based on the page_token field in the request.
      *
      * Generated from protobuf field <code>repeated .ondewo.survey.Survey surveys = 1;</code>
      */
     private $surveys;
     /**
-     * Token to retrieve the next page of results, or empty if there are no
-     * more results in the list.
+     * Token to retrieve the next page of results, or empty if there are no more results in the list.
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      */
@@ -38,11 +36,9 @@ class ListSurveysResponse extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Ondewo\Survey\Survey[] $surveys
-     *           The list of surveys. There will be a maximum number of items
-     *           returned based on the page_token field in the request.
+     *           The list of surveys. There will be a maximum number of items returned based on the page_token field in the request.
      *     @type string $next_page_token
-     *           Token to retrieve the next page of results, or empty if there are no
-     *           more results in the list.
+     *           Token to retrieve the next page of results, or empty if there are no more results in the list.
      * }
      */
     public function __construct($data = NULL) {
@@ -51,8 +47,7 @@ class ListSurveysResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The list of surveys. There will be a maximum number of items
-     * returned based on the page_token field in the request.
+     * The list of surveys. There will be a maximum number of items returned based on the page_token field in the request.
      *
      * Generated from protobuf field <code>repeated .ondewo.survey.Survey surveys = 1;</code>
      * @return RepeatedField<\Ondewo\Survey\Survey>
@@ -63,8 +58,7 @@ class ListSurveysResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * The list of surveys. There will be a maximum number of items
-     * returned based on the page_token field in the request.
+     * The list of surveys. There will be a maximum number of items returned based on the page_token field in the request.
      *
      * Generated from protobuf field <code>repeated .ondewo.survey.Survey surveys = 1;</code>
      * @param \Ondewo\Survey\Survey[] $var
@@ -79,8 +73,7 @@ class ListSurveysResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Token to retrieve the next page of results, or empty if there are no
-     * more results in the list.
+     * Token to retrieve the next page of results, or empty if there are no more results in the list.
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @return string
@@ -91,8 +84,7 @@ class ListSurveysResponse extends \Google\Protobuf\Internal\Message
     }
 
     /**
-     * Token to retrieve the next page of results, or empty if there are no
-     * more results in the list.
+     * Token to retrieve the next page of results, or empty if there are no more results in the list.
      *
      * Generated from protobuf field <code>string next_page_token = 2;</code>
      * @param string $var

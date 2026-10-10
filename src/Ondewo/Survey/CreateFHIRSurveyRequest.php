@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Request message for creating a survey from FHIR format
+ *
  * Generated from protobuf message <code>ondewo.survey.CreateFHIRSurveyRequest</code>
  */
 class CreateFHIRSurveyRequest extends \Google\Protobuf\Internal\Message

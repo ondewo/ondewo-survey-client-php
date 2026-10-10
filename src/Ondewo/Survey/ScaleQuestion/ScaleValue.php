@@ -10,15 +10,21 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Represents a value and label pair for scale question endpoints
+ *
  * Generated from protobuf message <code>ondewo.survey.ScaleQuestion.ScaleValue</code>
  */
 class ScaleValue extends \Google\Protobuf\Internal\Message
 {
     /**
+     * Numeric value for this scale point
+     *
      * Generated from protobuf field <code>int32 value = 1;</code>
      */
     protected $value = 0;
     /**
+     * Human-readable label for this scale point
+     *
      * Generated from protobuf field <code>string label = 2;</code>
      */
     protected $label = '';
@@ -30,7 +36,9 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type int $value
+     *           Numeric value for this scale point
      *     @type string $label
+     *           Human-readable label for this scale point
      * }
      */
     public function __construct($data = NULL) {
@@ -39,6 +47,8 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Numeric value for this scale point
+     *
      * Generated from protobuf field <code>int32 value = 1;</code>
      * @return int
      */
@@ -48,6 +58,8 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Numeric value for this scale point
+     *
      * Generated from protobuf field <code>int32 value = 1;</code>
      * @param int $var
      * @return $this
@@ -61,6 +73,8 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Human-readable label for this scale point
+     *
      * Generated from protobuf field <code>string label = 2;</code>
      * @return string
      */
@@ -70,6 +84,8 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * Human-readable label for this scale point
+     *
      * Generated from protobuf field <code>string label = 2;</code>
      * @param string $var
      * @return $this

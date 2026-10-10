@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * A question that can be one of several question types: open-ended, single choice, multiple choice, scale, or parameter-based questions
+ *
  * Generated from protobuf message <code>ondewo.survey.Question</code>
  */
 class Question extends \Google\Protobuf\Internal\Message
@@ -23,12 +25,17 @@ class Question extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Ondewo\Survey\OpenQuestion $open_question
+     *           A question to which any kind of reply can be given and recorded
      *     @type \Ondewo\Survey\SingleChoiceQuestion $single_choice_question
+     *           A question for which exactly one out of a predefined set of options is expected as answer
      *     @type \Ondewo\Survey\MultipleChoiceQuestion $multiple_choice_question
+     *           A question for which exactly one or more out of a predefined set of options are expected as answers
      *     @type \Ondewo\Survey\ScaleQuestion $scale_question
      *           convenience wrapper around a SingleChoiceQuestion
      *     @type \Ondewo\Survey\SingleParameterQuestion $single_parameter_question
+     *           A question for which one or more entities of a particular type are expected as answers
      *     @type \Ondewo\Survey\MultipleParameterQuestion $multiple_parameter_question
+     *           A question for which one or more entities of a particular type are expected as answers
      * }
      */
     public function __construct($data = NULL) {
@@ -37,6 +44,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question to which any kind of reply can be given and recorded
+     *
      * Generated from protobuf field <code>.ondewo.survey.OpenQuestion open_question = 1;</code>
      * @return \Ondewo\Survey\OpenQuestion|null
      */
@@ -51,6 +60,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question to which any kind of reply can be given and recorded
+     *
      * Generated from protobuf field <code>.ondewo.survey.OpenQuestion open_question = 1;</code>
      * @param \Ondewo\Survey\OpenQuestion $var
      * @return $this
@@ -64,6 +75,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which exactly one out of a predefined set of options is expected as answer
+     *
      * Generated from protobuf field <code>.ondewo.survey.SingleChoiceQuestion single_choice_question = 2;</code>
      * @return \Ondewo\Survey\SingleChoiceQuestion|null
      */
@@ -78,6 +91,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which exactly one out of a predefined set of options is expected as answer
+     *
      * Generated from protobuf field <code>.ondewo.survey.SingleChoiceQuestion single_choice_question = 2;</code>
      * @param \Ondewo\Survey\SingleChoiceQuestion $var
      * @return $this
@@ -91,6 +106,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which exactly one or more out of a predefined set of options are expected as answers
+     *
      * Generated from protobuf field <code>.ondewo.survey.MultipleChoiceQuestion multiple_choice_question = 3;</code>
      * @return \Ondewo\Survey\MultipleChoiceQuestion|null
      */
@@ -105,6 +122,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which exactly one or more out of a predefined set of options are expected as answers
+     *
      * Generated from protobuf field <code>.ondewo.survey.MultipleChoiceQuestion multiple_choice_question = 3;</code>
      * @param \Ondewo\Survey\MultipleChoiceQuestion $var
      * @return $this
@@ -149,6 +168,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which one or more entities of a particular type are expected as answers
+     *
      * Generated from protobuf field <code>.ondewo.survey.SingleParameterQuestion single_parameter_question = 5;</code>
      * @return \Ondewo\Survey\SingleParameterQuestion|null
      */
@@ -163,6 +184,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which one or more entities of a particular type are expected as answers
+     *
      * Generated from protobuf field <code>.ondewo.survey.SingleParameterQuestion single_parameter_question = 5;</code>
      * @param \Ondewo\Survey\SingleParameterQuestion $var
      * @return $this
@@ -176,6 +199,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which one or more entities of a particular type are expected as answers
+     *
      * Generated from protobuf field <code>.ondewo.survey.MultipleParameterQuestion multiple_parameter_question = 6;</code>
      * @return \Ondewo\Survey\MultipleParameterQuestion|null
      */
@@ -190,6 +215,8 @@ class Question extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * A question for which one or more entities of a particular type are expected as answers
+     *
      * Generated from protobuf field <code>.ondewo.survey.MultipleParameterQuestion multiple_parameter_question = 6;</code>
      * @param \Ondewo\Survey\MultipleParameterQuestion $var
      * @return $this

@@ -10,11 +10,15 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Request message for creating a new survey
+ *
  * Generated from protobuf message <code>ondewo.survey.CreateSurveyRequest</code>
  */
 class CreateSurveyRequest extends \Google\Protobuf\Internal\Message
 {
     /**
+     * The survey to create
+     *
      * Generated from protobuf field <code>.ondewo.survey.Survey survey = 1;</code>
      */
     protected $survey = null;
@@ -26,6 +30,7 @@ class CreateSurveyRequest extends \Google\Protobuf\Internal\Message
      *     Optional. Data for populating the Message object.
      *
      *     @type \Ondewo\Survey\Survey $survey
+     *           The survey to create
      * }
      */
     public function __construct($data = NULL) {
@@ -34,6 +39,8 @@ class CreateSurveyRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The survey to create
+     *
      * Generated from protobuf field <code>.ondewo.survey.Survey survey = 1;</code>
      * @return \Ondewo\Survey\Survey|null
      */
@@ -53,6 +60,8 @@ class CreateSurveyRequest extends \Google\Protobuf\Internal\Message
     }
 
     /**
+     * The survey to create
+     *
      * Generated from protobuf field <code>.ondewo.survey.Survey survey = 1;</code>
      * @param \Ondewo\Survey\Survey $var
      * @return $this

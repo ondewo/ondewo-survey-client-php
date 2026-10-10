@@ -10,15 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * A question for which exactly one or more out of a predefined set of options are expected as answers
- * Example: MultipleChoiceQuestion(
- *      question_text='Which colors do you like?',
- *      choices=[
- *          Choice(synonyms=['red', 'reddisch']),
- *          Choice(synonyms=['blue', 'blueish']),
- *          Choice(synonyms=['yellow']),
- *          ]
- *       )
+ * <p>A question for which exactly one or more out of a predefined set of options are expected as answers</p>
+ * <p>Example: <code>MultipleChoiceQuestion(question_text=&apos;Which colors do you like?&apos;, choices=[Choice(synonyms=[&apos;red&apos;, &apos;reddisch&apos;]), Choice(synonyms=[&apos;blue&apos;, &apos;blueish&apos;]), Choice(synonyms=[&apos;yellow&apos;])])</code></p>
  *
  * Generated from protobuf message <code>ondewo.survey.MultipleChoiceQuestion</code>
  */

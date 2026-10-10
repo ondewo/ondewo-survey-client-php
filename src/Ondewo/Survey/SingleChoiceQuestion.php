@@ -10,15 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * A question for which exactly one out of a predefined set of options is expected as answer
- * Example: SingleChoiceQuestion(
- *      question_text='Who is your favorite movie hero?',
- *      choices=[
- *          Choice(synonyms=['Bond', 'James Bond']),
- *          Choice(synonyms=['Batman']),
- *          Choice(synonyms=['Superman', 'Clark Kent']),
- *          ]
- *      )
+ * <p>A question for which exactly one out of a predefined set of options is expected as answer</p>
+ * <p>Example: <code>SingleChoiceQuestion(question_text=&apos;Who is your favorite movie hero?&apos;, choices=[Choice(synonyms=[&apos;Bond&apos;, &apos;James Bond&apos;]), Choice(synonyms=[&apos;Batman&apos;]), Choice(synonyms=[&apos;Superman&apos;, &apos;Clark Kent&apos;])])</code></p>
  *
  * Generated from protobuf message <code>ondewo.survey.SingleChoiceQuestion</code>
  */

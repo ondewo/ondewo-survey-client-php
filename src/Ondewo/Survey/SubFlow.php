@@ -8,12 +8,13 @@ namespace Ondewo\Survey;
 use UnexpectedValueException;
 
 /**
- * Enumeration of (some of) the subflows which are created by default
- * This can be used to "switch off" particular subflows when creating an agent during CreateSurvey
- * Subflows are defined as one of the following:
- * - sequences of intents A -> B_1, ..., B_n -> ... -> Z_1, ..., Z_m which are linked by context relationships
- *      such that the first intent in the sequence can always be triggered
- * - single intents which can always be triggered
+ * <p>Enumeration of (some of) the subflows which are created by default</p>
+ * <p>This can be used to &quot;switch off&quot; particular subflows when creating an agent during CreateSurvey</p>
+ * <p>Subflows are defined as one of the following:</p>
+ * <ul>
+ *   <li>sequences of intents A -&gt; B_1, ..., B_n -&gt; ... -&gt; Z_1, ..., Z_m which are linked by context relationships such that the first intent in the sequence can always be triggered</li>
+ *   <li>single intents which can always be triggered</li>
+ * </ul>
  *
  * Protobuf type <code>ondewo.survey.SubFlow</code>
  */

@@ -10,6 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Request message for listing surveys with pagination support
+ *
  * Generated from protobuf message <code>ondewo.survey.ListSurveysRequest</code>
  */
 class ListSurveysRequest extends \Google\Protobuf\Internal\Message
@@ -17,9 +19,9 @@ class ListSurveysRequest extends \Google\Protobuf\Internal\Message
     /**
      * Optional. The next_page_token value returned from a previous list request.
      * Example:
-     *      "current_index-10--page_size-20"
-     *      Start page -> 10
-     *      Page size -> 20
+     * <ul>
+     *   <li>&quot;current_index-10--page_size-20&quot; - Start page -&gt; 10, Page size -&gt; 20</li>
+     * </ul>
      *
      * Generated from protobuf field <code>string page_token = 1;</code>
      */
@@ -34,9 +36,9 @@ class ListSurveysRequest extends \Google\Protobuf\Internal\Message
      *     @type string $page_token
      *           Optional. The next_page_token value returned from a previous list request.
      *           Example:
-     *                "current_index-10--page_size-20"
-     *                Start page -> 10
-     *                Page size -> 20
+     *           <ul>
+     *             <li>&quot;current_index-10--page_size-20&quot; - Start page -&gt; 10, Page size -&gt; 20</li>
+     *           </ul>
      * }
      */
     public function __construct($data = NULL) {
@@ -47,9 +49,9 @@ class ListSurveysRequest extends \Google\Protobuf\Internal\Message
     /**
      * Optional. The next_page_token value returned from a previous list request.
      * Example:
-     *      "current_index-10--page_size-20"
-     *      Start page -> 10
-     *      Page size -> 20
+     * <ul>
+     *   <li>&quot;current_index-10--page_size-20&quot; - Start page -&gt; 10, Page size -&gt; 20</li>
+     * </ul>
      *
      * Generated from protobuf field <code>string page_token = 1;</code>
      * @return string
@@ -62,9 +64,9 @@ class ListSurveysRequest extends \Google\Protobuf\Internal\Message
     /**
      * Optional. The next_page_token value returned from a previous list request.
      * Example:
-     *      "current_index-10--page_size-20"
-     *      Start page -> 10
-     *      Page size -> 20
+     * <ul>
+     *   <li>&quot;current_index-10--page_size-20&quot; - Start page -&gt; 10, Page size -&gt; 20</li>
+     * </ul>
      *
      * Generated from protobuf field <code>string page_token = 1;</code>
      * @param string $var

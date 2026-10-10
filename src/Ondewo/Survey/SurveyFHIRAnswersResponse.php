@@ -10,13 +10,15 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
+ * Response message containing survey answers in FHIR format
+ *
  * Generated from protobuf message <code>ondewo.survey.SurveyFHIRAnswersResponse</code>
  */
 class SurveyFHIRAnswersResponse extends \Google\Protobuf\Internal\Message
 {
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      */
@@ -36,7 +38,7 @@ class SurveyFHIRAnswersResponse extends \Google\Protobuf\Internal\Message
      *
      *     @type string $survey_id
      *           The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     *           Format: `projects/<Project ID>/agent`.
+     *           Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *     @type \Google\Protobuf\Struct[] $fhir_questionnaire_responses
      *           all requested answers
      * }
@@ -48,7 +50,7 @@ class SurveyFHIRAnswersResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      * @return string
@@ -60,7 +62,7 @@ class SurveyFHIRAnswersResponse extends \Google\Protobuf\Internal\Message
 
     /**
      * The project identifier for this survey. Equal to the parent of the corresponding Agent.
-     * Format: `projects/<Project ID>/agent`.
+     * Format: <pre><code>projects/&lt;Project ID&gt;/agent</code></pre>
      *
      * Generated from protobuf field <code>string survey_id = 1;</code>
      * @param string $var

@@ -10,8 +10,8 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Protobuf\RepeatedField;
 
 /**
- * Collect information about the entity behind the survey, the purpose of the survey, legal stuff, etc.
- * This is needed to generate meaningful messages and training data for some of the auto-generated intents.
+ * <p>Collect information about the entity behind the survey, the purpose of the survey, legal stuff, etc.</p>
+ * <p>This is needed to generate meaningful messages and training data for some of the auto-generated intents.</p>
  *
  * Generated from protobuf message <code>ondewo.survey.SurveyInfo</code>
  */
@@ -76,10 +76,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
     /**
      * Required.
      * A pronounceable explanation of the legal implications of participating in the survey.
-     * For example:
-     *  "Your answers during this survey will be stored anonymously for the next two years and then deleted."
+     * For example: &quot;Your answers during this survey will be stored anonymously for the next two years and then deleted.&quot;
      * Should be formulated such that the agent can afterwards ask for the consent of the user.
-     * Example for how the agent could continue: "Are you willing to participate in this survey?"
+     * Example for how the agent could continue: &quot;Are you willing to participate in this survey?&quot;
      *
      * Generated from protobuf field <code>string legal_disclaimer = 9;</code>
      */
@@ -126,10 +125,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      *     @type string $legal_disclaimer
      *           Required.
      *           A pronounceable explanation of the legal implications of participating in the survey.
-     *           For example:
-     *            "Your answers during this survey will be stored anonymously for the next two years and then deleted."
+     *           For example: &quot;Your answers during this survey will be stored anonymously for the next two years and then deleted.&quot;
      *           Should be formulated such that the agent can afterwards ask for the consent of the user.
-     *           Example for how the agent could continue: "Are you willing to participate in this survey?"
+     *           Example for how the agent could continue: &quot;Are you willing to participate in this survey?&quot;
      *     @type bool $anonymous
      *           Optional.
      *           Defaults to False. Allows the definition of a survey as anonymous or not.
@@ -368,10 +366,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
     /**
      * Required.
      * A pronounceable explanation of the legal implications of participating in the survey.
-     * For example:
-     *  "Your answers during this survey will be stored anonymously for the next two years and then deleted."
+     * For example: &quot;Your answers during this survey will be stored anonymously for the next two years and then deleted.&quot;
      * Should be formulated such that the agent can afterwards ask for the consent of the user.
-     * Example for how the agent could continue: "Are you willing to participate in this survey?"
+     * Example for how the agent could continue: &quot;Are you willing to participate in this survey?&quot;
      *
      * Generated from protobuf field <code>string legal_disclaimer = 9;</code>
      * @return string
@@ -384,10 +381,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
     /**
      * Required.
      * A pronounceable explanation of the legal implications of participating in the survey.
-     * For example:
-     *  "Your answers during this survey will be stored anonymously for the next two years and then deleted."
+     * For example: &quot;Your answers during this survey will be stored anonymously for the next two years and then deleted.&quot;
      * Should be formulated such that the agent can afterwards ask for the consent of the user.
-     * Example for how the agent could continue: "Are you willing to participate in this survey?"
+     * Example for how the agent could continue: &quot;Are you willing to participate in this survey?&quot;
      *
      * Generated from protobuf field <code>string legal_disclaimer = 9;</code>
      * @param string $var
