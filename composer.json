@@ -2,7 +2,13 @@
   "name": "ondewo/survey-client-php",
   "description": "ONDEWO SURVEY (Survey) gRPC client for PHP, generated from the ondewo-survey-api protocol buffer definitions",
   "type": "library",
-  "keywords": ["ondewo", "survey", "grpc", "protobuf", "client"],
+  "keywords": [
+    "ondewo",
+    "survey",
+    "grpc",
+    "protobuf",
+    "client"
+  ],
   "homepage": "https://github.com/ondewo/ondewo-survey-client-php",
   "license": "Apache-2.0",
   "authors": [
@@ -26,7 +32,10 @@
     "psr/log": "To receive ClientConfig's insecure-channel warning on a PSR-3 logger instead of error_log()"
   },
   "autoload": {
-    "classmap": ["src/"],
+    "classmap": [
+      "auth/",
+      "src/"
+    ],
     "psr-4": {
       "Ondewo\\Survey\\Auth\\": "auth/"
     }
