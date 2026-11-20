@@ -116,9 +116,9 @@ class Survey extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSurveyId($var)
+    public function setSurveyId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->survey_id = $var;
 
         return $this;
@@ -142,9 +142,9 @@ class Survey extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setDisplayName($var)
+    public function setDisplayName(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->display_name = $var;
 
         return $this;
@@ -172,9 +172,9 @@ class Survey extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLanguageCode($var)
+    public function setLanguageCode(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->language_code = $var;
 
         return $this;
@@ -198,7 +198,7 @@ class Survey extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\Question[] $var
      * @return $this
      */
-    public function setQuestions($var)
+    public function setQuestions(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\Survey\Question::class);
         $this->questions = $arr;
@@ -234,9 +234,8 @@ class Survey extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\SurveyInfo $var
      * @return $this
      */
-    public function setSurveyInfo($var)
+    public function setSurveyInfo(\Ondewo\Survey\SurveyInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\SurveyInfo::class);
         $this->survey_info = $var;
 
         return $this;
@@ -246,7 +245,7 @@ class Survey extends \Google\Protobuf\Internal\Message
      * Optional. List of subflows excluded for this survey.
      *
      * Generated from protobuf field <code>repeated .ondewo.survey.SubFlow exclude_subflows = 9;</code>
-     * @return RepeatedField<int>
+     * @return RepeatedField<int> one of the values in {@see \Ondewo\Survey\SubFlow}
      */
     public function getExcludeSubflows()
     {
@@ -257,10 +256,10 @@ class Survey extends \Google\Protobuf\Internal\Message
      * Optional. List of subflows excluded for this survey.
      *
      * Generated from protobuf field <code>repeated .ondewo.survey.SubFlow exclude_subflows = 9;</code>
-     * @param int[] $var
+     * @param int[] $var one of the values in {@see \Ondewo\Survey\SubFlow}
      * @return $this
      */
-    public function setExcludeSubflows($var)
+    public function setExcludeSubflows(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::ENUM, \Ondewo\Survey\SubFlow::class);
         $this->exclude_subflows = $arr;
@@ -272,7 +271,7 @@ class Survey extends \Google\Protobuf\Internal\Message
      * Current status of the NLU Agent respecting to the Survey
      *
      * Generated from protobuf field <code>.ondewo.survey.Survey.AgentStatus status = 10;</code>
-     * @return int
+     * @return int one of the values in {@see \Ondewo\Survey\Survey\AgentStatus}
      */
     public function getStatus()
     {
@@ -283,10 +282,10 @@ class Survey extends \Google\Protobuf\Internal\Message
      * Current status of the NLU Agent respecting to the Survey
      *
      * Generated from protobuf field <code>.ondewo.survey.Survey.AgentStatus status = 10;</code>
-     * @param int $var
+     * @param int $var one of the values in {@see \Ondewo\Survey\Survey\AgentStatus}
      * @return $this
      */
-    public function setStatus($var)
+    public function setStatus(int $var)
     {
         GPBUtil::checkEnum($var, \Ondewo\Survey\Survey\AgentStatus::class);
         $this->status = $var;

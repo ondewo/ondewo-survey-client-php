@@ -72,9 +72,9 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQuestionText($var)
+    public function setQuestionText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->question_text = $var;
 
         return $this;
@@ -108,9 +108,8 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\ScaleQuestion\ScaleValue $var
      * @return $this
      */
-    public function setMinValue($var)
+    public function setMinValue(\Ondewo\Survey\ScaleQuestion\ScaleValue|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\ScaleQuestion\ScaleValue::class);
         $this->min_value = $var;
 
         return $this;
@@ -144,9 +143,8 @@ class ScaleQuestion extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\ScaleQuestion\ScaleValue $var
      * @return $this
      */
-    public function setMaxValue($var)
+    public function setMaxValue(\Ondewo\Survey\ScaleQuestion\ScaleValue|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\ScaleQuestion\ScaleValue::class);
         $this->max_value = $var;
 
         return $this;

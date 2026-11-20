@@ -68,9 +68,9 @@ class SurveyFHIRAnswersResponse extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSurveyId($var)
+    public function setSurveyId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->survey_id = $var;
 
         return $this;
@@ -94,7 +94,7 @@ class SurveyFHIRAnswersResponse extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Struct[] $var
      * @return $this
      */
-    public function setFhirQuestionnaireResponses($var)
+    public function setFhirQuestionnaireResponses(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Google\Protobuf\Struct::class);
         $this->fhir_questionnaire_responses = $arr;

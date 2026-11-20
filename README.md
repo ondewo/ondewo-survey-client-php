@@ -66,7 +66,7 @@ The client version tracks the ONDEWO SURVEY API in major and minor version, so p
 matches the server you talk to:
 
 ```bash
-composer require ondewo/survey-client-php:^2.0
+composer require ondewo/survey-client-php:^2.1
 ```
 
 or, in `composer.json`:
@@ -74,7 +74,7 @@ or, in `composer.json`:
 ```json
 {
   "require": {
-    "ondewo/survey-client-php": "^2.0"
+    "ondewo/survey-client-php": "^2.1"
   }
 }
 ```
@@ -116,7 +116,7 @@ make setup_developer_environment_locally
 ```
 .
 ├── ondewo-survey-api              <----- submodule: the .proto definitions (ondewo/ = the services, google/ = imports)
-├── ondewo-proto-compiler   <----- submodule: the compiler images, pinned to tags/5.15.1
+├── ondewo-proto-compiler   <----- submodule: the compiler images, pinned to tags/5.17.0
 ├── auth                    <----- HAND-WRITTEN sources (bearer token authenticator, ClientConfig: TLS / mutual TLS)
 ├── src                     <----- GENERATED stubs, committed - compiler-owned, wiped on every generation run
 │   ├── GPBMetadata         <----- descriptor bootstrap, one class per .proto

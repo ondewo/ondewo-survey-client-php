@@ -34,7 +34,7 @@ class FHIRClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\CreateFHIRSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\Survey>
      */
     public function CreateFHIRSurvey(\Ondewo\Survey\CreateFHIRSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -49,7 +49,7 @@ class FHIRClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\GetSurveyAnswersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\SurveyFHIRAnswersResponse>
      */
     public function GetFHIRSurveyAnswers(\Ondewo\Survey\GetSurveyAnswersRequest $argument,
       $metadata = [], $options = []) {
@@ -64,7 +64,7 @@ class FHIRClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\GetAllSurveyAnswersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\SurveyFHIRAnswersResponse>
      */
     public function GetAllFHIRSurveyAnswers(\Ondewo\Survey\GetAllSurveyAnswersRequest $argument,
       $metadata = [], $options = []) {

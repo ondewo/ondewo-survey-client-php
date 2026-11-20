@@ -75,7 +75,7 @@ class Choice extends \Google\Protobuf\Internal\Message
      * @param string[] $var
      * @return $this
      */
-    public function setSynonyms($var)
+    public function setSynonyms(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::STRING);
         $this->synonyms = $arr;
@@ -113,9 +113,8 @@ class Choice extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\Question $var
      * @return $this
      */
-    public function setFollowUpQuestion($var)
+    public function setFollowUpQuestion(\Ondewo\Survey\Question|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\Question::class);
         $this->follow_up_question = $var;
 
         return $this;
@@ -139,9 +138,9 @@ class Choice extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->value = $var;
 
         return $this;

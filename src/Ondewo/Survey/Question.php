@@ -66,9 +66,8 @@ class Question extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\OpenQuestion $var
      * @return $this
      */
-    public function setOpenQuestion($var)
+    public function setOpenQuestion(\Ondewo\Survey\OpenQuestion|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\OpenQuestion::class);
         $this->writeOneof(1, $var);
 
         return $this;
@@ -97,9 +96,8 @@ class Question extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\SingleChoiceQuestion $var
      * @return $this
      */
-    public function setSingleChoiceQuestion($var)
+    public function setSingleChoiceQuestion(\Ondewo\Survey\SingleChoiceQuestion|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\SingleChoiceQuestion::class);
         $this->writeOneof(2, $var);
 
         return $this;
@@ -128,9 +126,8 @@ class Question extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\MultipleChoiceQuestion $var
      * @return $this
      */
-    public function setMultipleChoiceQuestion($var)
+    public function setMultipleChoiceQuestion(\Ondewo\Survey\MultipleChoiceQuestion|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\MultipleChoiceQuestion::class);
         $this->writeOneof(3, $var);
 
         return $this;
@@ -159,9 +156,8 @@ class Question extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\ScaleQuestion $var
      * @return $this
      */
-    public function setScaleQuestion($var)
+    public function setScaleQuestion(\Ondewo\Survey\ScaleQuestion|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\ScaleQuestion::class);
         $this->writeOneof(4, $var);
 
         return $this;
@@ -190,9 +186,8 @@ class Question extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\SingleParameterQuestion $var
      * @return $this
      */
-    public function setSingleParameterQuestion($var)
+    public function setSingleParameterQuestion(\Ondewo\Survey\SingleParameterQuestion|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\SingleParameterQuestion::class);
         $this->writeOneof(5, $var);
 
         return $this;
@@ -221,9 +216,8 @@ class Question extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\MultipleParameterQuestion $var
      * @return $this
      */
-    public function setMultipleParameterQuestion($var)
+    public function setMultipleParameterQuestion(\Ondewo\Survey\MultipleParameterQuestion|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\MultipleParameterQuestion::class);
         $this->writeOneof(6, $var);
 
         return $this;

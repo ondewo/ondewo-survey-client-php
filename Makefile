@@ -44,12 +44,12 @@ export
 
 # MUST BE THE SAME AS THE API in Major and Minor Version Number
 # example: API 2.9.0 --> Client 2.9.X
-ONDEWO_SURVEY_VERSION=2.0.1
+ONDEWO_SURVEY_VERSION=2.1.0
 
 # Submodule pins. Both are checked out by `make checkout_defined_submodule_versions`, so the
 # stubs of a release are always reproducible from the two commits recorded here.
-ONDEWO_SURVEY_API_GIT_BRANCH=tags/2.0.1
-ONDEWO_PROTO_COMPILER_GIT_BRANCH=tags/5.16.0
+ONDEWO_SURVEY_API_GIT_BRANCH=tags/2.1.0
+ONDEWO_PROTO_COMPILER_GIT_BRANCH=tags/5.17.0
 
 # Submodule directories - both sit at the repository root, see .gitmodules
 ONDEWO_SURVEY_API_DIR=ondewo-survey-api

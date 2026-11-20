@@ -64,7 +64,7 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
      * @param int $var
      * @return $this
      */
-    public function setValue($var)
+    public function setValue(int $var)
     {
         GPBUtil::checkInt32($var);
         $this->value = $var;
@@ -90,9 +90,9 @@ class ScaleValue extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLabel($var)
+    public function setLabel(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->label = $var;
 
         return $this;

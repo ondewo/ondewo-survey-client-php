@@ -95,7 +95,7 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param int|string $var
      * @return $this
      */
-    public function setQuestionNr($var)
+    public function setQuestionNr(int|string $var)
     {
         GPBUtil::checkInt64($var);
         $this->question_nr = $var;
@@ -121,9 +121,9 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setSessionId($var)
+    public function setSessionId(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->session_id = $var;
 
         return $this;
@@ -147,9 +147,9 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAnswerText($var)
+    public function setAnswerText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->answer_text = $var;
 
         return $this;
@@ -175,9 +175,9 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAnswerParameter($var)
+    public function setAnswerParameter(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->answer_parameter = $var;
 
         return $this;
@@ -201,9 +201,9 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setAnswerParameterOriginal($var)
+    public function setAnswerParameterOriginal(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->answer_parameter_original = $var;
 
         return $this;
@@ -232,9 +232,8 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAnonymous($var)
+    public function setAnonymous(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->writeOneof(7, $var);
 
         return $this;
@@ -263,9 +262,8 @@ class Answer extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\Answer\UserInfo $var
      * @return $this
      */
-    public function setUserInformation($var)
+    public function setUserInformation(\Ondewo\Survey\Answer\UserInfo|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\Answer\UserInfo::class);
         $this->writeOneof(6, $var);
 
         return $this;

@@ -31,7 +31,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\CreateSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\Survey>
      */
     public function CreateSurvey(\Ondewo\Survey\CreateSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -46,7 +46,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\GetSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\Survey>
      */
     public function GetSurvey(\Ondewo\Survey\GetSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -61,7 +61,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\UpdateSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\Survey>
      */
     public function UpdateSurvey(\Ondewo\Survey\UpdateSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -76,7 +76,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\DeleteSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteSurvey(\Ondewo\Survey\DeleteSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -91,7 +91,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\ListSurveysRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\ListSurveysResponse>
      */
     public function ListSurveys(\Ondewo\Survey\ListSurveysRequest $argument,
       $metadata = [], $options = []) {
@@ -106,7 +106,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\GetSurveyAnswersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\SurveyAnswersResponse>
      */
     public function GetSurveyAnswers(\Ondewo\Survey\GetSurveyAnswersRequest $argument,
       $metadata = [], $options = []) {
@@ -121,7 +121,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\GetAllSurveyAnswersRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\SurveyAnswersResponse>
      */
     public function GetAllSurveyAnswers(\Ondewo\Survey\GetAllSurveyAnswersRequest $argument,
       $metadata = [], $options = []) {
@@ -136,7 +136,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\AgentSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\AgentSurveyResponse>
      */
     public function CreateAgentSurvey(\Ondewo\Survey\AgentSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -151,7 +151,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\AgentSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Ondewo\Survey\AgentSurveyResponse>
      */
     public function UpdateAgentSurvey(\Ondewo\Survey\AgentSurveyRequest $argument,
       $metadata = [], $options = []) {
@@ -166,7 +166,7 @@ class SurveysClient extends \Grpc\BaseStub {
      * @param \Ondewo\Survey\AgentSurveyRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
-     * @return \Grpc\UnaryCall
+     * @return \Grpc\UnaryCall<\Google\Protobuf\GPBEmpty>
      */
     public function DeleteAgentSurvey(\Ondewo\Survey\AgentSurveyRequest $argument,
       $metadata = [], $options = []) {

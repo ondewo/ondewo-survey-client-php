@@ -66,9 +66,8 @@ class CreateFHIRSurveyRequest extends \Google\Protobuf\Internal\Message
      * @param \Google\Protobuf\Struct $var
      * @return $this
      */
-    public function setFhirQuestionnaire($var)
+    public function setFhirQuestionnaire(\Google\Protobuf\Struct|null $var)
     {
-        GPBUtil::checkMessage($var, \Google\Protobuf\Struct::class);
         $this->fhir_questionnaire = $var;
 
         return $this;

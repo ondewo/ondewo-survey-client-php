@@ -67,9 +67,9 @@ class MultipleParameterQuestion extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQuestionText($var)
+    public function setQuestionText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->question_text = $var;
 
         return $this;
@@ -95,9 +95,9 @@ class MultipleParameterQuestion extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setParameterType($var)
+    public function setParameterType(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->parameter_type = $var;
 
         return $this;

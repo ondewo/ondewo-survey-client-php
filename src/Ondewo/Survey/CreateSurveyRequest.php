@@ -66,9 +66,8 @@ class CreateSurveyRequest extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\Survey $var
      * @return $this
      */
-    public function setSurvey($var)
+    public function setSurvey(\Ondewo\Survey\Survey|null $var)
     {
-        GPBUtil::checkMessage($var, \Ondewo\Survey\Survey::class);
         $this->survey = $var;
 
         return $this;

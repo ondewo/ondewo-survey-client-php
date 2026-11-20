@@ -57,9 +57,9 @@ class OpenQuestion extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQuestionText($var)
+    public function setQuestionText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->question_text = $var;
 
         return $this;

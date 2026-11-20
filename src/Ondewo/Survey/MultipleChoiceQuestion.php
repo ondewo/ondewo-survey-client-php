@@ -69,9 +69,9 @@ class MultipleChoiceQuestion extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setQuestionText($var)
+    public function setQuestionText(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->question_text = $var;
 
         return $this;
@@ -99,7 +99,7 @@ class MultipleChoiceQuestion extends \Google\Protobuf\Internal\Message
      * @param \Ondewo\Survey\Choice[] $var
      * @return $this
      */
-    public function setChoices($var)
+    public function setChoices(array|RepeatedField $var)
     {
         $arr = GPBUtil::checkRepeatedField($var, \Google\Protobuf\Internal\GPBType::MESSAGE, \Ondewo\Survey\Choice::class);
         $this->choices = $arr;

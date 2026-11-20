@@ -159,9 +159,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLegalEntity($var)
+    public function setLegalEntity(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->legal_entity = $var;
 
         return $this;
@@ -187,9 +187,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPostalAddress($var)
+    public function setPostalAddress(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->postal_address = $var;
 
         return $this;
@@ -215,9 +215,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setEmailAddress($var)
+    public function setEmailAddress(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->email_address = $var;
 
         return $this;
@@ -243,9 +243,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhoneNumber($var)
+    public function setPhoneNumber(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phone_number = $var;
 
         return $this;
@@ -271,9 +271,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPhoneHours($var)
+    public function setPhoneHours(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->phone_hours = $var;
 
         return $this;
@@ -299,9 +299,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setExpectedDuration($var)
+    public function setExpectedDuration(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->expected_duration = $var;
 
         return $this;
@@ -327,9 +327,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setPurpose($var)
+    public function setPurpose(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->purpose = $var;
 
         return $this;
@@ -355,9 +355,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setTopic($var)
+    public function setTopic(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->topic = $var;
 
         return $this;
@@ -389,9 +389,9 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param string $var
      * @return $this
      */
-    public function setLegalDisclaimer($var)
+    public function setLegalDisclaimer(string $var)
     {
-        GPBUtil::checkString($var, True);
+        GPBUtil::checkString($var, true);
         $this->legal_disclaimer = $var;
 
         return $this;
@@ -419,9 +419,8 @@ class SurveyInfo extends \Google\Protobuf\Internal\Message
      * @param bool $var
      * @return $this
      */
-    public function setAnonymous($var)
+    public function setAnonymous(bool $var)
     {
-        GPBUtil::checkBool($var);
         $this->anonymous = $var;
 
         return $this;
